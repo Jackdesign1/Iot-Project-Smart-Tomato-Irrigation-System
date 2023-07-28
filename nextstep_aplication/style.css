@@ -1,0 +1,320 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9f9;
+}
+
+header {
+  background-color: black;
+  color: #ffff;
+  padding: 10px;
+}
+
+
+/*-----------------------------------------------------------------------------------NAVBAR---------------------------------------------------------------------------------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    color: black;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* CSS */
+.logo_ns{
+  width: 120px;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+.nav-link-center {
+  margin-left: 70px;
+}
+
+.nav-link {
+    margin-left: 40px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+.nav-link img {
+  width: 30px;
+}
+
+.group-link img {
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 30px;
+} 
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown .toggle {
+  display: none;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  top: 100%;
+  right: 0;
+  padding: 10px;
+  min-width: 150px;
+}
+
+.dropdown .toggle:checked ~ .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropdown-content a {
+  display: block;
+  padding: 5px 10px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.dropdown .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+
+    .container {
+      display: flex;
+      width: auto; /* Total lebar container = 200px + 500px + 200px = 900px */
+      height: auto;
+      justify-content: space-around;
+      margin-top: 10px; 
+
+    }
+
+    .container-1 {
+      width: 300px;
+      border: 1px solid black;
+    }
+
+    .container-2 {
+      width: 600px;
+      height: auto;
+      background: whitesmoke;
+      border-radius: 10px;
+
+    }
+
+    .container-3 {
+      width: 300px;
+      border: 1px solid black;
+    }
+
+.column-center {
+  display: flex;
+  width: auto; 
+  border: 1px solid gray;
+  border-radius: 10px;
+  background: white;
+}
+
+    .column-center-right {
+  position: relative;
+}
+
+.column-right {
+  width: 350px;
+}
+
+.column-center-left {
+  width: 75px;
+  padding: 10px;
+  background-color: #ffff;
+}
+
+.column-center-left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.custom-textarea {
+  width: 450px;
+  height: 100px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  transition: box-shadow 0.3s ease;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-textarea:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-file-upload {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-file-upload input[type="file"] {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 999px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+.custom-file-upload img {
+  max-width: 20px; /* Atur ukuran ikon sesuai kebutuhan Anda */
+  max-height: 20px; /* Atur ukuran ikon sesuai kebutuhan Anda */
+  pointer-events: none; /* Untuk memastikan ikon tidak dapat diklik */
+}
+
+.follow-touggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #ffff;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.follow-touggle button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.follow-touggle button:hover {
+  background-color: #45a049;
+}
+
+
+/*-----------------------------------------------------------------------------------------------POST------------------------------------------------------------------*/
+
+.container-post-h {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.container-profil-h {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container-profil-left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.container-profil-right p {
+  margin: 0;
+  font-weight: normal; /* Ubah font weight menjadi normal */
+}
+
+.container-isi-h img {
+  width: 500px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container-isi-h p {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.container-isi-btn button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+}
+
+.container-isi-btn button:hover {
+  background-color: #45a049;
+}
+
+.container-isi-btn button img {
+  width: 10px;
+}
